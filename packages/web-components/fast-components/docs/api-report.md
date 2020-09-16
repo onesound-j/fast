@@ -26,6 +26,7 @@ import { Slider } from '@microsoft/fast-foundation';
 import { SliderLabel } from '@microsoft/fast-foundation';
 import { Switch } from '@microsoft/fast-foundation';
 import { Tab } from '@microsoft/fast-foundation';
+import { TabPanel } from '@microsoft/fast-foundation';
 import { Tabs } from '@microsoft/fast-foundation';
 import { TextArea } from '@microsoft/fast-foundation';
 import { TextField } from '@microsoft/fast-foundation';
@@ -508,6 +509,10 @@ export class FASTTab extends Tab {
 }
 
 // @public
+export class FASTTabPanel extends TabPanel {
+}
+
+// @public
 export class FASTTabs extends Tabs {
 }
 
@@ -529,7 +534,7 @@ export class FASTTextField extends TextField {
     connectedCallback(): void;
 }
 
-// @public (undocumented)
+// @public
 export class FASTTooltip extends Tooltip {
 }
 
@@ -956,6 +961,9 @@ export enum StandardLuminance {
 
 // @public
 export const SwitchStyles: import("@microsoft/fast-element").ElementStyles;
+
+// @public
+export const TabPanelStyles: import("@microsoft/fast-element").ElementStyles;
 
 // @public
 export const TabsStyles: import("@microsoft/fast-element").ElementStyles;
